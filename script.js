@@ -5,7 +5,9 @@ const weather = document.querySelector('.weather-box');
 
 input.addEventListener('keyup', (e) => {
     if (e.key == "Enter") {
-        WeatherData(input.value);
+        const inputval = input.value.toLowerCase();
+        console.log(inputval)
+        WeatherData(inputval);
         input.value = '';
     }
 
